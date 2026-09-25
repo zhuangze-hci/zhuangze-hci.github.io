@@ -37,3 +37,293 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* Hou Zhuangze — clean academic profile */
+:root {
+  --hz-ink: #162033;
+  --hz-muted: #5f6b7a;
+  --hz-line: #e5eaf0;
+  --hz-soft: #f6f8fb;
+  --hz-accent: #175cd3;
+  --hz-accent-dark: #1048a4;
+}
+
+html,
+body {
+  background: #fff;
+}
+
+body {
+  color: var(--hz-ink);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.masthead {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--hz-line);
+  box-shadow: 0 1px 10px rgba(22, 32, 51, 0.035);
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a,
+.greedy-nav .site-title {
+  color: var(--hz-ink);
+}
+
+.greedy-nav .visible-links a::before {
+  background: var(--hz-accent);
+}
+
+.page__content {
+  color: var(--hz-ink);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.page__content a:not(.profile-button):not(.publication-link) {
+  color: var(--hz-accent);
+}
+
+.author__avatar img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: 68% 42%;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 8px 26px rgba(22, 32, 51, 0.13);
+}
+
+.author__name {
+  color: var(--hz-ink);
+}
+
+.author__bio,
+.author__urls-wrapper,
+.author__urls a {
+  color: var(--hz-muted);
+}
+
+.profile-intro {
+  max-width: 800px;
+  margin-bottom: 2.75rem;
+  padding: 0.5rem 0 2.25rem;
+  border-bottom: 1px solid var(--hz-line);
+}
+
+.profile-kicker {
+  margin: 0 0 0.55rem;
+  color: var(--hz-accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.profile-intro h1 {
+  margin: 0 0 1rem;
+  color: var(--hz-ink);
+  font-size: clamp(2.35rem, 6vw, 4.4rem);
+  font-weight: 750;
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+}
+
+.profile-lead {
+  max-width: 720px;
+  margin: 0 0 0.9rem;
+  color: #354052;
+  font-size: clamp(1.04rem, 2vw, 1.22rem);
+  line-height: 1.7;
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.5rem 0 1.35rem;
+}
+
+.profile-button,
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--hz-accent);
+  border-radius: 999px;
+  color: var(--hz-accent);
+  font-size: 0.86rem;
+  font-weight: 650;
+  line-height: 1;
+  text-decoration: none;
+  transition: background 150ms ease, color 150ms ease, transform 150ms ease;
+}
+
+.profile-button {
+  min-height: 2.65rem;
+  padding: 0.72rem 1.1rem;
+}
+
+.profile-button--primary,
+.profile-button:hover,
+.publication-link:hover {
+  background: var(--hz-accent);
+  color: #fff;
+}
+
+.profile-button:hover,
+.publication-link:hover {
+  transform: translateY(-1px);
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.research-tags span {
+  padding: 0.42rem 0.72rem;
+  border: 1px solid var(--hz-line);
+  border-radius: 999px;
+  background: var(--hz-soft);
+  color: #435065;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.section-heading,
+.page-intro h1 {
+  margin-bottom: 0.4rem;
+  color: var(--hz-ink);
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+  letter-spacing: -0.035em;
+}
+
+.section-subtitle,
+.page-intro p {
+  max-width: 720px;
+  margin-top: 0;
+  color: var(--hz-muted);
+}
+
+.featured-publications,
+.publication-list {
+  margin-top: 1.6rem;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 230px) minmax(0, 1fr);
+  gap: 1.35rem;
+  margin: 0 0 1.25rem;
+  padding: 1rem;
+  border: 1px solid var(--hz-line);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(22, 32, 51, 0.045);
+}
+
+.publication-card__media {
+  display: flex;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9px;
+  background: var(--hz-soft);
+}
+
+.publication-card__media img {
+  width: 100%;
+  height: 100%;
+  max-height: 190px;
+  object-fit: contain;
+}
+
+.publication-card__placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  background:
+    linear-gradient(135deg, rgba(23, 92, 211, 0.08), rgba(23, 92, 211, 0.015)),
+    repeating-linear-gradient(135deg, transparent 0 14px, rgba(23, 92, 211, 0.035) 14px 15px);
+}
+
+.publication-card__placeholder span {
+  color: var(--hz-accent);
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.publication-card__meta {
+  margin: 0 0 0.35rem;
+  color: var(--hz-accent);
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.publication-card__title {
+  margin: 0 0 0.45rem;
+  color: var(--hz-ink);
+  font-size: 1.18rem;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+
+.publication-card__authors,
+.publication-card__venue,
+.publication-card__excerpt {
+  margin: 0 0 0.35rem;
+  color: var(--hz-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.publication-card__venue {
+  color: #3c4758;
+  font-style: italic;
+}
+
+.publication-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+
+.publication-link {
+  min-height: 2rem;
+  padding: 0.48rem 0.72rem;
+  font-size: 0.75rem;
+}
+
+.cv-publication {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--hz-line);
+}
+
+.cv-publication p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .profile-intro {
+    padding-top: 0;
+  }
+
+  .publication-card {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card__media,
+  .publication-card__placeholder {
+    min-height: 170px;
+  }
+}

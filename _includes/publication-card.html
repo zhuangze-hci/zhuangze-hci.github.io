@@ -1,0 +1,30 @@
+{% assign publication = include.post %}
+<article class="publication-card">
+  <div class="publication-card__media">
+    {% if publication.teaser %}
+      <img src="{{ publication.teaser | relative_url }}" alt="{{ publication.teaser_alt | default: publication.title | escape }}">
+    {% else %}
+      <div class="publication-card__placeholder" aria-hidden="true">
+        <span>{{ publication.short_venue | default: "Publication" }}</span>
+      </div>
+    {% endif %}
+  </div>
+  <div class="publication-card__body">
+    <p class="publication-card__meta">{{ publication.short_venue }} · {{ publication.date | date: "%Y" }}</p>
+    <h2 class="publication-card__title">
+      {% if publication.paperurl %}
+        <a href="{{ publication.paperurl }}">{{ publication.title }}</a>
+      {% else %}
+        {{ publication.title }}
+      {% endif %}
+    </h2>
+    <p class="publication-card__authors">{{ publication.authors }}</p>
+    <p class="publication-card__venue">{{ publication.venue }}</p>
+    {% if publication.excerpt %}<p class="publication-card__excerpt">{{ publication.excerpt }}</p>{% endif %}
+    <div class="publication-card__links">
+      {% if publication.paperurl %}<a class="publication-link" href="{{ publication.paperurl }}">Paper</a>{% endif %}
+      {% if publication.doiurl %}<a class="publication-link" href="{{ publication.doiurl }}">DOI</a>{% endif %}
+      {% if publication.preprinturl %}<a class="publication-link" href="{{ publication.preprinturl }}">Preprint</a>{% endif %}
+    </div>
+  </div>
+</article>

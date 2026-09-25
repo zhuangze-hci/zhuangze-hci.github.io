@@ -1,64 +1,39 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+## Current position
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+**Ph.D. Candidate in Creative Media**<br>
+School of Creative Media, City University of Hong Kong
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Research interests
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+- Human-Computer Interaction
+- Human-AI Interaction
+- Mixed Reality and Virtual Reality
+- Multimodal and spatial interaction
+- AI-assisted immersive authoring
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Publications
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+{% assign sorted_publications = site.publications | sort: "date" | reverse %}
+{% for post in sorted_publications %}
+<div class="cv-publication">
+  <strong>{{ post.title }}</strong><br>
+  {{ post.authors }}<br>
+  <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}.
+  {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+</div>
+{% endfor %}
+
+## Academic profiles
+
+- [Google Scholar]({{ site.author.googlescholar }})
+- [ORCID]({{ site.author.orcid }})
+- [Email](mailto:{{ site.author.email }})
