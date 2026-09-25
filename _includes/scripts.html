@@ -1,3 +1,7 @@
+<script>
+  document.documentElement.removeAttribute("data-theme");
+  try { localStorage.setItem("theme", "light"); } catch (error) {}
+</script>
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
 {% include analytics.html %}

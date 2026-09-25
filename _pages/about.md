@@ -13,16 +13,19 @@ redirect_from:
   <p class="profile-lead">
     I am a second-year Ph.D. candidate in Human-Computer Interaction (HCI) at the
     School of Creative Media, City University of Hong Kong, under the supervision
-    of Professor Can Liu.
+    of Prof. Can Liu. I am currently a visiting scholar at Singapore Management
+    University, working with Prof. Jiannan Li.
   </p>
   <p>
-    My research focuses on AI-assisted multimodal interaction for immersive creation.
-    I study how people express and progressively refine underspecified creative and
-    spatial intentions through speech, gesture, embodied context, scene information,
-    and interaction history. I design transparent and repairable mixed-initiative
-    systems that help people turn these evolving intentions into controllable actions
-    across VR, MR, and situated physical making, while preserving human agency
-    throughout the process.
+    My research explores how AI can support immersive creation beyond one-shot
+    generation. I develop multimodal, context-aware systems that use AI to interpret
+    underspecified goals, integrate speech, gesture, embodied and scene context, and
+    maintain interaction history across turns. By externalizing AI-generated
+    suggestions, spatial references, uncertainty, and constraints as inspectable
+    intermediate representations, my work helps users explore alternatives and
+    translate evolving intent into reversible and executable actions. Across VR, MR,
+    and situated physical making, I investigate how AI can provide adaptive creative
+    and spatial assistance while keeping people in control of decisions and outcomes.
   </p>
   <div class="profile-actions">
     <a class="profile-button profile-button--primary" href="/publications/">View publications</a>
