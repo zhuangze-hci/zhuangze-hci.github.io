@@ -20,7 +20,6 @@
     </h2>
     <p class="publication-card__authors">{{ publication.authors }}</p>
     <p class="publication-card__venue">{{ publication.venue }}</p>
-    {% if publication.excerpt %}<p class="publication-card__excerpt">{{ publication.excerpt }}</p>{% endif %}
     <div class="publication-card__links">
       {% if publication.paperurl %}<a class="publication-link" href="{{ publication.paperurl }}">Paper</a>{% endif %}
       {% if publication.doiurl %}<a class="publication-link" href="{{ publication.doiurl }}">DOI</a>{% endif %}

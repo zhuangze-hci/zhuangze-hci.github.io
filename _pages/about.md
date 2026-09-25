@@ -8,17 +8,21 @@ redirect_from:
 ---
 
 <section class="profile-intro">
-  <p class="profile-kicker">Human-Computer Interaction · Human-AI Interaction · MR/VR</p>
-  <h1>Hou Zhuangze</h1>
+  <p class="profile-kicker">Human-AI Interaction · Multimodal Interaction · Immersive Creation</p>
+  <h1>About me</h1>
   <p class="profile-lead">
-    I am a Ph.D. Candidate in Creative Media at the School of Creative Media,
-    City University of Hong Kong. My research sits at the intersection of
-    human-computer interaction, human-AI interaction, and mixed and virtual reality.
+    I am a second-year Ph.D. candidate in Human-Computer Interaction (HCI) at the
+    School of Creative Media, City University of Hong Kong, under the supervision
+    of Professor Can Liu.
   </p>
   <p>
-    I design and study interactive systems that help people communicate spatial
-    intent, author immersive environments, and collaborate with AI in transparent
-    and controllable ways.
+    My research focuses on AI-assisted multimodal interaction for immersive creation.
+    I study how people express and progressively refine underspecified creative and
+    spatial intentions through speech, gesture, embodied context, scene information,
+    and interaction history. I design transparent and repairable mixed-initiative
+    systems that help people turn these evolving intentions into controllable actions
+    across VR, MR, and situated physical making, while preserving human agency
+    throughout the process.
   </p>
   <div class="profile-actions">
     <a class="profile-button profile-button--primary" href="/publications/">View publications</a>
@@ -32,9 +36,9 @@ redirect_from:
 <div class="research-tags" aria-label="Research interests">
   <span>Human-Computer Interaction</span>
   <span>Human-AI Interaction</span>
-  <span>Mixed Reality</span>
-  <span>Virtual Reality</span>
-  <span>Spatial Interaction</span>
+  <span>Multimodal Interaction</span>
+  <span>VR/MR</span>
+  <span>Immersive Creation</span>
 </div>
 
 ## Featured publications
