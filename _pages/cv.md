@@ -32,7 +32,7 @@ Singapore Management University — working with Prof. Jiannan Li
   {{ post.authors }}<br>
   {% if post.contribution_note %}<span class="publication-card__note">{{ post.contribution_note }}</span><br>{% endif %}
   <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}.
-  {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+  {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.paper_label | default: "Paper" }}</a>{% endif %}
 </div>
 {% endfor %}
 

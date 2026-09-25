@@ -22,7 +22,7 @@
     {% if publication.contribution_note %}<p class="publication-card__note">{{ publication.contribution_note }}</p>{% endif %}
     <p class="publication-card__venue">{{ publication.venue }}</p>
     <div class="publication-card__links">
-      {% if publication.paperurl %}<a class="publication-link" href="{{ publication.paperurl }}">Paper</a>{% endif %}
+      {% if publication.paperurl %}<a class="publication-link" href="{{ publication.paperurl }}">{{ publication.paper_label | default: "Paper" }}</a>{% endif %}
       {% if publication.doiurl %}<a class="publication-link" href="{{ publication.doiurl }}">DOI</a>{% endif %}
       {% if publication.preprinturl %}<a class="publication-link" href="{{ publication.preprinturl }}">Preprint</a>{% endif %}
     </div>
