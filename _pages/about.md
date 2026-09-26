@@ -34,7 +34,7 @@ redirect_from:
   </p>
   <div class="profile-actions">
     <a class="profile-button profile-button--primary" href="/publications/">View publications</a>
-    <a class="profile-button" href="/cv/">View CV</a>
+    <a class="profile-button" href="/files/Hou_Zhuangze_CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
     <a class="profile-button" href="mailto:zhuanghou3-c@my.cityu.edu.hk">Email me</a>
   </div>
 </section>
