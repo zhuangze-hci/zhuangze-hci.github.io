@@ -17,6 +17,11 @@ redirect_from:
     University, working with Prof. Jiannan Li.
   </p>
   <p>
+    Before beginning my Ph.D., I received both my bachelor's and master's degrees
+    in Software Engineering from Dalian University of Technology. During my
+    master's studies, I conducted research under the supervision of Prof. Qiufen Xia.
+  </p>
+  <p>
     My research explores how AI can support immersive creation beyond one-shot
     generation. I develop multimodal, context-aware systems that use AI to interpret
     underspecified goals, integrate speech, gesture, embodied and scene context, and
