@@ -10,7 +10,3 @@
 main:
   - title: "Publications"
     url: /publications/
-
-  - title: "CV"
-    url: /files/Hou_Zhuangze_CV.pdf
-    new_tab: true

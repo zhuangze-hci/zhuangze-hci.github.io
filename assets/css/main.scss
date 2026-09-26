@@ -106,6 +106,29 @@ body {
   color: var(--hz-muted);
 }
 
+.author__cv-link {
+  display: inline-flex;
+  min-height: 2.15rem;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.15rem 0 0.85rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--hz-accent);
+  border-radius: 999px;
+  color: var(--hz-accent);
+  font-size: 0.8rem;
+  font-weight: 650;
+  line-height: 1;
+  text-decoration: none;
+  transition: background 150ms ease, color 150ms ease, transform 150ms ease;
+}
+
+.author__cv-link:hover {
+  background: var(--hz-accent);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
 .profile-intro {
   max-width: 800px;
   margin-bottom: 2.25rem;
